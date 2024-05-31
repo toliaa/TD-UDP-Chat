@@ -28,6 +28,7 @@
             this.chatBox = new System.Windows.Forms.RichTextBox();
             this.chatFontDialog = new System.Windows.Forms.FontDialog();
             this.chatColorDialog = new System.Windows.Forms.ColorDialog();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ipAddressLabel
@@ -100,9 +101,20 @@
             this.chatBox.TabIndex = 7;
             this.chatBox.Text = "";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 266);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "© 2024 Tolia Driapak";
+            // 
             // ChatSettingsForm
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(296, 291);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.chatBox);
             this.Controls.Add(this.colorButton);
             this.Controls.Add(this.fontButton);
@@ -132,5 +144,6 @@
         private System.Windows.Forms.RichTextBox chatBox;
         private System.Windows.Forms.FontDialog chatFontDialog;
         private System.Windows.Forms.ColorDialog chatColorDialog;
+        private System.Windows.Forms.Label label1;
     }
 }
