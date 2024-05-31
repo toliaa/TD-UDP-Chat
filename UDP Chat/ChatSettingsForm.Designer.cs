@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatSettingsForm));
             this.ipAddressLabel = new System.Windows.Forms.Label();
             this.portLabel = new System.Windows.Forms.Label();
             this.ipAddressTextBox = new System.Windows.Forms.TextBox();
@@ -34,7 +35,7 @@
             this.ipAddressLabel.AutoSize = true;
             this.ipAddressLabel.Location = new System.Drawing.Point(12, 9);
             this.ipAddressLabel.Name = "ipAddressLabel";
-            this.ipAddressLabel.Size = new System.Drawing.Size(61, 13);
+            this.ipAddressLabel.Size = new System.Drawing.Size(76, 16);
             this.ipAddressLabel.TabIndex = 0;
             this.ipAddressLabel.Text = "IP Address:";
             // 
@@ -43,7 +44,7 @@
             this.portLabel.AutoSize = true;
             this.portLabel.Location = new System.Drawing.Point(12, 48);
             this.portLabel.Name = "portLabel";
-            this.portLabel.Size = new System.Drawing.Size(29, 13);
+            this.portLabel.Size = new System.Drawing.Size(34, 16);
             this.portLabel.TabIndex = 1;
             this.portLabel.Text = "Port:";
             // 
@@ -51,14 +52,14 @@
             // 
             this.ipAddressTextBox.Location = new System.Drawing.Point(79, 6);
             this.ipAddressTextBox.Name = "ipAddressTextBox";
-            this.ipAddressTextBox.Size = new System.Drawing.Size(193, 20);
+            this.ipAddressTextBox.Size = new System.Drawing.Size(193, 22);
             this.ipAddressTextBox.TabIndex = 2;
             // 
             // portTextBox
             // 
             this.portTextBox.Location = new System.Drawing.Point(79, 45);
             this.portTextBox.Name = "portTextBox";
-            this.portTextBox.Size = new System.Drawing.Size(193, 20);
+            this.portTextBox.Size = new System.Drawing.Size(193, 22);
             this.portTextBox.TabIndex = 3;
             // 
             // saveButton
@@ -110,10 +111,13 @@
             this.Controls.Add(this.ipAddressTextBox);
             this.Controls.Add(this.portLabel);
             this.Controls.Add(this.ipAddressLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChatSettingsForm";
+            this.Text = "Settings";
             this.Load += new System.EventHandler(this.ChatSettingsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

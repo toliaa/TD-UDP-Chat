@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatForm));
             this.chatBox = new System.Windows.Forms.RichTextBox();
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
@@ -35,7 +36,7 @@
             // 
             this.messageTextBox.Location = new System.Drawing.Point(12, 218);
             this.messageTextBox.Name = "messageTextBox";
-            this.messageTextBox.Size = new System.Drawing.Size(279, 20);
+            this.messageTextBox.Size = new System.Drawing.Size(279, 22);
             this.messageTextBox.TabIndex = 1;
             // 
             // sendButton
@@ -65,10 +66,13 @@
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.messageTextBox);
             this.Controls.Add(this.chatBox);
-            this.Name = "ChatForm";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "TD UDP";
+            this.Text = "TD UDP Chat";
             this.Load += new System.EventHandler(this.ChatForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
