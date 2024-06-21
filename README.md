@@ -35,9 +35,9 @@ TD-UDP-Chat is a Windows Forms application built using C#. This application allo
 
 ## Code Structure
 
-- **ProcessViewForm.cs**: Contains the main logic for loading, displaying, and managing processes.
-- ***ProcessViewForm.Designer.cs**: Contains the designer-generated code for UI layout and component initialization.
-- **Program.cs**: Entry point of the application, starting the `Form1` form.
+- **TD UDP chat.cs**: Contains the main logic for loading, displaying, and managing messages.
+- ***ChatSettingsForm.cs**: Contains settings of UDP chat.
+- **Program.cs**: Entry point of the application, starting the `TDP UDP Chat` form.
 
 
 ## License
